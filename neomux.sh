@@ -6,4 +6,6 @@ pkg install which mlocate nodejs-lts lua51* luarocks stylua python ruby dart cma
 gem update
 gem install neovim
 pip install pynvim
+cargo install ast-grep
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+getnf
