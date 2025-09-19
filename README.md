@@ -1,0 +1,2 @@
+# termazing
+termux stuff
