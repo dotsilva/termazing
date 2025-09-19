@@ -4,8 +4,9 @@ pkg update && pkg upgrade -y &&
 pkg install mandoc &&
 pkg install which mlocate nodejs-lts lua51* lua-language-server wget luarocks stylua python ruby dart cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
 gem update
-gem install neovim
+gem install neovim ruby-lsp rubocop readapt
 pip install pynvim
+luarocks install luacheck
 cargo install ast-grep
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.profile
 source ~/.profile
