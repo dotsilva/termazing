@@ -23,7 +23,7 @@ return {
   -- Ferramentas do Flutter
   {
     "akinsho/flutter-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "stevearc/dressing.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       -- As configurações do LSP para colorir o código podem ser mantidas aqui
       lsp = {
