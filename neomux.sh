@@ -25,4 +25,5 @@ echo "HORA DO SHOW, LAZYVRUUUUUUUUUUUUM..."
 sleep 3
 command -v ast-grep
 ast-grep --version
+sleep 3
 nvim
