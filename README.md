@@ -1,9 +1,8 @@
 # termazing
-termux stuff
-a ruby, dart, js and lua config for neovim in termux
+a ruby, dart, js/ts and lua config for neovim in termux
 take in mind this is experimental
 
-
+# install
 to install you can just copy paste (review the script before installing it, take in mind it calls to another script to get nerd fonts!)
 ```
 pkg update && pkg upgrade -y
