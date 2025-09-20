@@ -8,10 +8,7 @@ to install you can just copy paste (review the script before installing it, take
 pkg update && pkg upgrade -y
 ```
 ```
-pkg install mandoc &&
-pkg install curl ncurses-utils git
-```
-```
+pkg install git &&
 git clone https://github.com/dotsilva/termazing.git &&
 cp ~/termazing/neomux.sh ~/ &&
 chmod +x neomux.sh &&
