@@ -28,7 +28,7 @@ command -v ast-grep
 ast-grep --version
 sleep 3
 #open neovim headless to run lazyvim in the script
-nvim --headless "+Lazy! sync" +qa
+nvim --headless -c 'autocmd User LazyVimStarted quitall' -c 'Lazy! sync'
 git clone https://github.com/dotsilva/termazing
 mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
