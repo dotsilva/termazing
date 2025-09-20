@@ -1,5 +1,5 @@
 # termazing
-a ruby, dart, js/ts and lua config for neovim in termux
+a ruby, dart, js, lua and bash config for neovim in termux
 take in mind this is experimental
 
 # install
