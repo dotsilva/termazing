@@ -29,6 +29,7 @@ sleep 3
 command -v ast-grep
 ast-grep --version
 sleep 3
+fastfetch
 mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 termux-reload-settings
