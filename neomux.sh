@@ -22,9 +22,18 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
 rm -rf ~/.config/nvim/.git &&
-echo "HORA DO SHOW, LAZYVRUUUUUUUUUUUUM..."
+echo "SHOW TIME, LAZYVRUUUUUUUUUUUUM..."
 sleep 3
 command -v ast-grep
 ast-grep --version
 sleep 3
+#open neovim headless to run lazyvim in the script
+nvim --headless "+Lazy! sync" +qa
+git clone https://github.com/dotsilva/termazing
+mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
+#it delete useless artifacts remaining from the git clone
+rm -rf $HOME/termazing/
+
+nvim --headless "+Lazy! sync" +qa
 nvim
+
