@@ -8,6 +8,8 @@ to install you can just copy paste (review the script before installing it, take
 ```
 pkg update && pkg upgrade -y
 pkg install mandoc &&
-pkg install curl ncurses-utils &&
+pkg install curl ncurses-utils
+```
+```
 curl -fsSL https://raw.githubusercontent.com/dotsilva/termazing/main/neomux.sh | bash
 ```
