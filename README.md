@@ -6,9 +6,11 @@ take in mind this is experimental
 to install you can just copy paste (review the script before installing it, take in mind it calls to another script to get nerd fonts!)
 
 ```
-pkg update && pkg install mandoc && pkg install git &&
+pkg update &&
+pkg install mandoc &&
+pkg install git &&
 git clone https://github.com/dotsilva/termazing.git &&
-cp ~/termazing/neomux.sh ~/ &&
+mv ~/termazing/neomux.sh ~/ &&
 chmod +x neomux.sh &&
 ./neomux.sh
 ```
