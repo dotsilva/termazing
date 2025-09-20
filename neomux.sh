@@ -8,6 +8,8 @@ gem install neovim ruby-lsp rubocop readapt
 pip install pynvim
 luarocks install luacheck
 npm install -g typescript-language-server
+npm install -g @fsouza/prettierd
+
 cargo install ast-grep
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.profile
 source ~/.profile
