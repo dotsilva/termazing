@@ -31,6 +31,7 @@ sleep 3
 nvim --headless "+Lazy! sync" +qa
 git clone https://github.com/dotsilva/termazing
 mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
+mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 #it delete useless artifacts remaining from the git clone
 rm -rf $HOME/termazing/
 
