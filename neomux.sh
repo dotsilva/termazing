@@ -5,8 +5,8 @@ echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
 sleep 5
 pkg update && pkg upgrade -y &&
-pkg install -y mandoc &&
-pkg install -y termux-api which mlocate nodejs-lts lua51* luajit lua-language-server wget luarocks stylua python ruby dart cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
+pkg install mandoc &&
+pkg install termux-api which mlocate nodejs-lts lua51* luajit lua-language-server wget luarocks stylua python ruby dart cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
 echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
