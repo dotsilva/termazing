@@ -27,11 +27,8 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
 rm -rf ~/.config/nvim/.git &&
-echo "SHOW TIME, LAZYVRUUUUUUUUUUUUM..."
-sleep 3
-command -v ast-grep
-ast-grep --version
-sleep 3
+echo ">>>>>>>>>> TIME TO FLEX! <<<<<<<<<<"
+sleep 6
 fastfetch
 mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
