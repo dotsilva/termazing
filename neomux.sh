@@ -28,7 +28,7 @@ echo ">> installing npm dependencies <<"
 echo "----------------------------"
 sleep 5
 npm install -g typescript-language-server
-npm install -g @fsouza/prettierd
+npm install -g prettier
 npm install -g bash-language-server
 npm install -g neovim
 npm install -g typescript
