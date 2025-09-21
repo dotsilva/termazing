@@ -6,23 +6,18 @@ echo "  ----------------------------  "
 sleep 5
 pkg update && pkg upgrade -y &&
   pkg install mandoc &&
-  pkg install termux-api which mlocate nodejs-lts lua51* luajit lua-language-server wget luarocks stylua python ruby cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
+  pkg install build-essential termux-api which mlocate nodejs-lts lua51* luajit lua-language-server wget luarocks stylua python ruby cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
 echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
-sleep 5
 command -v termux-clipboard-set
+sleep 5
 echo "----------------------------"
 echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
 sleep 5
 gem update
 gem install neovim ruby-lsp rubocop readapt
-echo "----------------------------"
-echo ">> python pynvim <<"
-echo "----------------------------"
-sleep 5
-pip install pynvim
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
@@ -68,6 +63,7 @@ echo ">> TIME TO FLEX <<"
 echo "----------------------------"
 sleep 5
 fastfetch
+sleep 5
 echo "----------------------------"
 echo ">> installing .lua files <<"
 echo "----------------------------"
