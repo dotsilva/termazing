@@ -31,12 +31,14 @@ luarocks install luacheck
 echo "----------------------------"
 echo ">> typescript language server <<"
 echo ">> prettierd <<"
+echo ">> node provider <<"
 echo ">> bash language server <<"
 echo "----------------------------"
 sleep 5
 npm install -g typescript-language-server
 npm install -g @fsouza/prettierd
 npm install -g bash-language-server
+npm install -g neovim
 echo "----------------------------"
 echo ">> compiling ast-grep <<"
 echo "----------------------------"
