@@ -68,7 +68,7 @@ echo "----------------------------"
 echo ">> installing .lua files <<"
 echo "----------------------------"
 sleep 5
-mv ~/termazing/termux-rails-flutter/* ~/.config/nvim/lua/plugins/
+mv ~/termazing/termux-rails/* ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo "----------------------------"
