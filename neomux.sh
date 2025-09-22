@@ -12,6 +12,7 @@ pkg install lua51* luajit lua-language-server
 pkg install wget luarocks stylua
 pkg install python ruby cmake ninja clang rust
 pkg install ripgrep fzf fd curl tmux
+pkg install tree-sitter tree-sitter-lua
 pkg instal fastfetch shfmt shellcheck neovim
 echo "----------------------------"
 echo ">> confirming clipboard <<"
@@ -23,7 +24,7 @@ echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
 sleep 5
 gem update
-gem install rails bundler rufo neovim
+gem install rails bundler neovim
 gem install ruby-lsp rubocop readapt
 gem install slim_lint haml_lint
 echo "----------------------------"
