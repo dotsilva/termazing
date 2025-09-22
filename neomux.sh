@@ -78,6 +78,7 @@ sleep 5
 mv ~/termazing/tx-rails/* ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
+echo ">> fixing config files path <<"
 echo "----------------------------"
 sleep 5
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
