@@ -1,5 +1,5 @@
 #!/bin/env bash
-
+#Believe in Jesus
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
@@ -75,12 +75,6 @@ mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 mv ~/config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
 mv ~/config/nvim/lua/plugins/profile ~/.profile
 termux-reload-settings
-echo "----------------------------"
-echo ">> cleaning gitclone folder <<"
-echo "----------------------------"
-sleep 5
-#it delete useless artifacts remaining from the git clone
-rm -rf $HOME/termazing/
 echo "----------------------------"
 echo ">> loading lazyvim headless <<"
 echo "----------------------------"
