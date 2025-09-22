@@ -4,7 +4,8 @@ echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
 sleep 5
-pkg update && pkg upgrade -y &&
+pkg update &&
+  pkg upgrade -y &&
   pkg install mandoc &&
   pkg install build-essential termux-api which
 pkg install mlocate nodejs-lts openssl
@@ -66,25 +67,22 @@ mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
   rm -rf ~/.config/nvim/.git &&
   echo "----------------------------"
-echo ">> TIME TO FLEX <<"
+echo ">> FLEXING 💪 <<"
 echo "----------------------------"
-sleep 5
 fastfetch
-sleep 5
 echo "----------------------------"
 echo ">> installing .lua files <<"
 echo "----------------------------"
-sleep 5
+sleep 7
 mv ~/termazing/tx-rails/* ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> fixing config files path <<"
 echo "----------------------------"
-sleep 5
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 mv ~/.config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
 mv ~/.config/nvim/lua/plugins/profile ~/.profile
-sleep 1
+sleep 7
 termux-reload-settings
 echo "----------------------------"
 echo ">> loading lazyvim headless <<"
