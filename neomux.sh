@@ -74,6 +74,7 @@ echo ">> applying purplewave theme <<"
 echo "----------------------------"
 sleep 5
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
+mv ~/config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
 termux-reload-settings
 echo "----------------------------"
 echo ">> cleaning gitclone folder <<"
