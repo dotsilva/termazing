@@ -1,12 +1,15 @@
 #!/bin/env bash
-#Believe in Jesus
+
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
 sleep 5
 pkg update && pkg upgrade -y &&
   pkg install mandoc &&
-  pkg install build-essential termux-api which mlocate nodejs-lts lua51* luajit lua-language-server wget luarocks stylua python ruby cmake ninja clang rust ripgrep fzf fd curl ncurses-utils git lazygit neovim fastfetch
+  pkg install build-essential termux-api which mlocate nodejs-lts
+pkg install lua51* luajit lua-language-server wget luarocks stylua
+pkg install python ruby cmake ninja clang rust ripgrep fzf fd curl
+pkg install ncurses-utils git lazygit neovim fastfetch shfmt shellcheck
 echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
