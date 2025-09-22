@@ -44,7 +44,6 @@ echo "----------------------------"
 sleep 5
 cargo install ast-grep
 cargo install taplo-cli
-cargo install taplo-lsp
 echo "----------------------------"
 echo ">> applying nerd fonts <<"
 echo "----------------------------"
