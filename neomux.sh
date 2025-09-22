@@ -82,8 +82,9 @@ echo ">> applying purplewave theme <<"
 echo "----------------------------"
 sleep 5
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
-mv ~/config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
-mv ~/config/nvim/lua/plugins/profile ~/.profile
+mv ~/.config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
+mv ~/.config/nvim/lua/plugins/profile ~/.profile
+sleep 1
 termux-reload-settings
 echo "----------------------------"
 echo ">> loading lazyvim headless <<"
