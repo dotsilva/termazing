@@ -6,10 +6,13 @@ echo "  ----------------------------  "
 sleep 5
 pkg update && pkg upgrade -y &&
   pkg install mandoc &&
-  pkg install build-essential termux-api which mlocate nodejs-lts
-pkg install lua51* luajit lua-language-server wget luarocks stylua
-pkg install python ruby cmake ninja clang rust ripgrep fzf fd curl tmux
-pkg install ncurses-utils git lazygit neovim fastfetch shfmt shellcheck
+  pkg install build-essential termux-api which
+pkg install mlocate nodejs-lts openssl
+pkg install lua51* luajit lua-language-server
+pkg install wget luarocks stylua
+pkg install python ruby cmake ninja clang rust
+pkg install ripgrep fzf fd curl tmux
+pkg instal fastfetch shfmt shellcheck neovim
 echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
