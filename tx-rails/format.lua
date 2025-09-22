@@ -20,7 +20,6 @@ return {
 			ruby = { "rubocop" },
 
 			-- Outros formatadores
-			toml = { "taplo" }, -- Adicionado
 			lua = { "stylua" },
 			sh = { "shfmt" },
 			bash = { "shfmt" },
