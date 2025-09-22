@@ -1,0 +1,15 @@
+export PATH="$HOME/.cargo/bin:$PATH"
+
+alias locate='updatedb && locate'
+
+# Auto-start tmux no Termux
+
+# garantir 256-color + truecolor
+export TERM=${TERM:-xterm-256color}
+export COLORTERM=truecolor
+
+#tmux
+if [[ -z "$TMUX" ]]; then
+  # Se não estiver no TMUX, anexe à sessão 'default' ou crie uma nova.
+  tmux attach-session -t default || tmux new-session -s default
+fi
