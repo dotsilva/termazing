@@ -38,8 +38,6 @@ echo ">> compiling ast-grep <<"
 echo "----------------------------"
 sleep 5
 cargo install ast-grep
-echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>~/.profile
-source ~/.profile
 echo "----------------------------"
 echo ">> applying nerd fonts <<"
 echo "----------------------------"
@@ -75,6 +73,7 @@ echo "----------------------------"
 sleep 5
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 mv ~/config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
+mv ~/config/nvim/lua/plugins/profile ~/.profile
 termux-reload-settings
 echo "----------------------------"
 echo ">> cleaning gitclone folder <<"
