@@ -1,6 +1,6 @@
 export PATH="$HOME/.cargo/bin:$PATH"
 
-alias locate='updatedb && locate'
+alias locatte='updatedb && locate'
 alias gitqik='git add . && git commit -m "commit" && git push'
 
 # Auto-start tmux no Termux
