@@ -1,21 +1,31 @@
+-- ~/.config/nvim/lua/plugins/conform.lua
 return {
-  "stevearc/conform.nvim",
-  opts = {
-    formatters_by_ft = {
-      -- Web (JavaScript, TypeScript, HTML, CSS, JSON)
-      ["javascript"] = { "prettierd" },
-      ["typescript"] = { "prettierd" },
-      ["html"] = { "prettierd" },
-      ["css"] = { "prettierd" },
-      ["json"] = { "prettierd" },
+	"stevearc/conform.nvim",
+	opts = {
+		formatters_by_ft = {
+			-- Usando prettierd para todos os tipos de arquivo de frontend
+			javascript = { "prettierd" },
+			typescript = { "prettierd" },
+			javascriptreact = { "prettierd" },
+			typescriptreact = { "prettierd" },
+			vue = { "prettierd" },
+			css = { "prettierd" },
+			scss = { "prettierd" },
+			html = { "prettierd" },
+			json = { "prettierd" },
+			yaml = { "prettierd" },
+			markdown = { "prettierd" },
 
-      -- Ruby
-      ["ruby"] = { "rubocop" },
+			-- Formatadores de Ruby e templates relacionados
+			ruby = { "rubocop" },
+			slim = { "slim-lint" }, -- Adicionado
+			haml = { "haml-lint" }, -- Adicionado
 
-      -- Outras
-      ["lua"] = { "stylua" },
-      ["bash"] = { "shfmt" },
-      ["sh"] = { "shfmt" },
-    },
-  },
+			-- Outros formatadores
+			toml = { "taplo" }, -- Adicionado
+			lua = { "stylua" },
+			sh = { "shfmt" },
+			bash = { "shfmt" },
+		},
+	},
 }

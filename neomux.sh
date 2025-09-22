@@ -20,7 +20,9 @@ echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
 sleep 5
 gem update
-gem install rails bundler rufo neovim ruby-lsp rubocop readapt
+gem install rails bundler rufo neovim
+gem install ruby-lsp rubocop readapt
+gem install slim_lint haml_lint
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
