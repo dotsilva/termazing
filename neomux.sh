@@ -8,7 +8,7 @@ pkg update && pkg upgrade -y &&
   pkg install mandoc &&
   pkg install build-essential termux-api which mlocate nodejs-lts
 pkg install lua51* luajit lua-language-server wget luarocks stylua
-pkg install python ruby cmake ninja clang rust ripgrep fzf fd curl
+pkg install python ruby cmake ninja clang rust ripgrep fzf fd curl tmux
 pkg install ncurses-utils git lazygit neovim fastfetch shfmt shellcheck
 echo "----------------------------"
 echo ">> confirming clipboard <<"
@@ -39,10 +39,12 @@ npm install -g neovim
 npm install -g typescript
 npm install -g eslint_d
 echo "----------------------------"
-echo ">> compiling ast-grep <<"
+echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
 sleep 5
 cargo install ast-grep
+cargo install taplo-cli
+cargo install taplo-lsp
 echo "----------------------------"
 echo ">> applying nerd fonts <<"
 echo "----------------------------"
