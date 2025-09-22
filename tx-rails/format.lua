@@ -18,8 +18,6 @@ return {
 
 			-- Formatadores de Ruby e templates relacionados
 			ruby = { "rubocop" },
-			slim = { "slim-lint" }, -- Adicionado
-			haml = { "haml-lint" }, -- Adicionado
 
 			-- Outros formatadores
 			toml = { "taplo" }, -- Adicionado
