@@ -5,8 +5,8 @@ echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
 sleep 5
 pkg update && pkg upgrade -y &&
-pkg install mandoc &&
-pkg install build-essential termux-api which
+  pkg install mandoc &&
+  pkg install build-essential termux-api which
 pkg install mlocate nodejs-lts openssl
 pkg install lua51* luajit lua-language-server
 pkg install wget luarocks stylua lazygit
@@ -26,7 +26,7 @@ sleep 5
 gem update
 gem install rails bundler neovim
 gem install ruby-lsp rubocop readapt
-gem install slim_lint haml_lint
+gem install erb_lint slim_lint haml_lint
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
@@ -47,7 +47,6 @@ echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
 sleep 5
 cargo install ast-grep
-cargo install taplo-cli
 echo "----------------------------"
 echo ">> applying nerd fonts <<"
 echo "----------------------------"
@@ -60,13 +59,13 @@ echo "----------------------------"
 sleep 5
 # required
 mv ~/.config/nvim{,.bak} &&
-# optional but recommended
-mv ~/.local/share/nvim{,.bak}
+  # optional but recommended
+  mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
-rm -rf ~/.config/nvim/.git &&
-echo "----------------------------"
+  rm -rf ~/.config/nvim/.git &&
+  echo "----------------------------"
 echo ">> TIME TO FLEX <<"
 echo "----------------------------"
 sleep 5
