@@ -80,7 +80,6 @@ mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 sleep 1
-soure ~/.profile
 termux-reload-settings
 sleep 1
 echo "----------------------------"
