@@ -79,9 +79,12 @@ echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> fixing config files path <<"
 echo "----------------------------"
+mkdir ~/.termux/
 mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 mv ~/.config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
 mv ~/.config/nvim/lua/plugins/profile ~/.profile
+mkdir ~/.termux/font/
+mv ~.config/nvim/lua/plugins/jbnerdxbold.ttf ~/.termux/font/
 sleep 7
 termux-reload-settings
 echo "----------------------------"
