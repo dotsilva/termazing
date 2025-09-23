@@ -64,11 +64,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim &&
 echo ">> FLEXING 💪 <<"
 echo "----------------------------"
 fastfetch
-echo "----------------------------"
-echo ">> installing .lua files <<"
-echo "----------------------------"
 sleep 7
-mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> fixing config files path <<"
@@ -76,14 +72,8 @@ echo "----------------------------"
 mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
-mv ~/termazing/tx-rails/jbnerdxbold.ttf ~/.termux/font/
 sleep 7
 termux-reload-settings
-echo "----------------------------"
-echo ">> loading lazyvim headless <<"
-echo "----------------------------"
-sleep 5
-nvim --headless -c 'Lazy! sync | qa'
 echo "----------------------------"
 echo ">> finished, starting neovim... <<"
 echo "----------------------------"
