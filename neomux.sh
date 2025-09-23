@@ -73,7 +73,7 @@ echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> fixing config files path <<"
 echo "----------------------------"
-mv ~/termazing/tx-rails/colors.properties ~/.termux/colors.properties
+mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 mkdir ~/.termux/font/
