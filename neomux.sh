@@ -76,7 +76,6 @@ echo "----------------------------"
 mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
-mkdir ~/.termux/font/
 mv ~/termazing/tx-rails/jbnerdxbold.ttf ~/.termux/font/
 sleep 7
 termux-reload-settings
