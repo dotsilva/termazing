@@ -73,8 +73,9 @@ fastfetch
 sleep 7
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
-echo ">> fixing config files path <<"
+echo ">> moving dotfiles <<"
 echo "----------------------------"
+mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
 mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
@@ -88,6 +89,6 @@ echo "----------------------------"
 sleep 5
 nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
-echo ">> script finished <<"
+echo ">> script finishing, opening neovim <<"
 echo "----------------------------"
-sleep 5
+sleep 2
