@@ -25,7 +25,7 @@ echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
 sleep 5
 gem update
-gem install rails bundler neovim
+gem install rails bundler neovim erb-formatter
 gem install ruby-lsp rubocop readapt
 gem install erb_lint slim_lint haml_lint
 echo "----------------------------"
@@ -68,17 +68,17 @@ echo "----------------------------"
 echo ">> installing .lua files <<"
 echo "----------------------------"
 sleep 7
-mv ~/termazing/tx-rails/* ~/.config/nvim/lua/plugins/
+mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> fixing config files path <<"
 echo "----------------------------"
 mkdir ~/.termux/
-mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
-mv ~/.config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
-mv ~/.config/nvim/lua/plugins/profile ~/.profile
+mv ~/termazing/tx-rails/colors.properties ~/.termux/colors.properties
+mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
+mv ~/termazing/tx-rails/profile ~/.profile
 mkdir ~/.termux/font/
-mv ~.config/nvim/lua/plugins/jbnerdxbold.ttf ~/.termux/font/jbnerdxbold.ttf
+mv ~/termazing/tx-rails/jbnerdxbold.ttf ~/.termux/font/jbnerdxbold.ttf
 sleep 7
 termux-reload-settings
 echo "----------------------------"
