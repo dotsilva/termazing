@@ -49,12 +49,6 @@ echo "----------------------------"
 sleep 5
 cargo install ast-grep
 echo "----------------------------"
-echo ">> applying nerd fonts <<"
-echo "----------------------------"
-sleep 5
-curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
-getnf
-echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
 sleep 5
@@ -84,7 +78,7 @@ mv ~/.config/nvim/lua/plugins/colors.properties ~/.termux/colors.properties
 mv ~/.config/nvim/lua/plugins/tmux.conf ~/.tmux.conf
 mv ~/.config/nvim/lua/plugins/profile ~/.profile
 mkdir ~/.termux/font/
-mv ~.config/nvim/lua/plugins/jbnerdxbold.ttf ~/.termux/font/
+mv ~.config/nvim/lua/plugins/jbnerdxbold.ttf ~/.termux/font/jbnerdxbold.ttf
 sleep 7
 termux-reload-settings
 echo "----------------------------"
