@@ -12,7 +12,7 @@ pkg install mlocate nodejs-lts openssl
 pkg install lua51* luajit lua-language-server
 pkg install wget luarocks stylua lazygit
 pkg install python ruby cmake ninja clang rust
-pkg install ripgrep fzf fd curl tmux
+pkg install ripgrep fzf fd curl tmux ncurses-utils
 pkg install tree-sitter tree-sitter-lua
 pkg instal fastfetch shfmt shellcheck neovim
 echo "----------------------------"
@@ -49,6 +49,12 @@ echo "----------------------------"
 sleep 5
 cargo install ast-grep
 echo "----------------------------"
+echo ">> nerd fonts scitpt <<"
+echo "----------------------------"
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+slee 2
+getnf
+echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
 sleep 5
@@ -72,10 +78,15 @@ echo "----------------------------"
 mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
-sleep 7
+sleep 1
 termux-reload-settings
+sleep 1
 echo "----------------------------"
-echo ">> finished, starting neovim... <<"
+echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
 sleep 5
-nvim
+nvim --headless "+Lazy! sync" +qa
+echo "----------------------------"
+echo ">> script finished <<"
+echo "----------------------------"
+sleep 5
