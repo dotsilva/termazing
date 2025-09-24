@@ -29,6 +29,7 @@ gem update
 gem install rails bundler neovim erb-formatter
 gem install ruby-lsp rubocop readapt
 gem install erb_lint slim_lint haml_lint
+gem install nokogiri -- --use-system-libraries
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
