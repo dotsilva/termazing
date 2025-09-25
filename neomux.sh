@@ -10,7 +10,7 @@ pkg update &&
   pkg install build-essential termux-api which
 pkg install mlocate nodejs-lts openssl
 pkg install lua51* luajit lua-language-server
-pkg install libxml2 libxslt
+pkg install libxml2 libxslt htop
 pkg install wget luarocks stylua lazygit
 pkg install python ruby cmake ninja clang rust
 pkg install ripgrep fzf fd curl tmux ncurses-utils
