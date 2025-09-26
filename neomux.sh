@@ -29,7 +29,6 @@ gem update
 gem install rails bundler neovim erb-formatter
 gem install ruby-lsp rubocop readapt
 gem install erb_lint slim_lint haml_lint
-gem install nokogiri -- --use-system-libraries
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
@@ -51,7 +50,12 @@ echo "----------------------------"
 sleep 5
 cargo install ast-grep
 echo "----------------------------"
-echo ">> nerd fonts scitpt <<"
+echo ">> building nokogiri gem <<"
+echo "----------------------------"
+sleep 5
+gem install nokogiri -- --use-system-libraries
+echo "----------------------------"
+echo ">> nerd fonts scritpt <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
 slee 2
