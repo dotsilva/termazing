@@ -16,6 +16,15 @@ pkg install ripgrep fzf fd curl tmux ncurses-utils
 pkg install tree-sitter tree-sitter-lua
 pkg instal fastfetch shfmt shellcheck neovim
 echo "----------------------------"
+echo ">> applying .files, font and theme <<"
+echo "----------------------------"
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+getnfd
+mv ~/termazing/tx-rails/2colors.properties ~/.termux/
+mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
+mv ~/termazing/tx-rails/profile ~/.profile
+termux-reload-settings
+echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
 command -v termux-clipboard-set
@@ -48,11 +57,6 @@ echo ">> building nokogiri gem <<"
 echo "----------------------------"
 gem install nokogiri -- --use-system-libraries
 echo "----------------------------"
-echo ">> nerd fonts scritpt <<"
-echo "----------------------------"
-curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
-getnf
-echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
 # required
@@ -68,14 +72,9 @@ echo ">> FLEXING 💪 <<"
 echo "----------------------------"
 fastfetch
 echo "----------------------------"
-echo ">> applying purplewave theme <<"
-echo ">> moving dotfiles <<"
+echo ">> moving .lua files <<"
 echo "----------------------------"
 mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
-mv ~/termazing/tx-rails/colors.properties ~/.termux/
-mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
-mv ~/termazing/tx-rails/profile ~/.profile
-termux-reload-settings
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
