@@ -3,19 +3,19 @@
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
-pkg update &&
-  pkg upgrade -y &&
-  pkg install mandoc &&
-  pkg install build-essential termux-api which
-pkg install mlocate nodejs-lts openssl
-pkg install lua51* luajit lua-language-server
-pkg install libxml2 libxslt htop
-pkg install wget luarocks stylua lazygit
-pkg install python ruby cmake ninja clang rust
-pkg install ripgrep fzf fd curl tmux ncurses-utils
-pkg install tree-sitter tree-sitter-lua
-pkg instal fastfetch shfmt shellcheck neovim
-echo "----------------------------"
+pkg update
+pkg upgrade -y
+pkg install -y mandoc &&
+  pkg install -y build-essential termux-api which \
+    mlocate nodejs-lts openssl \
+    lua51 luajit lua-language-server \
+    libxml2 libxslt htop \
+    wget luarocks stylua lazygit \
+    python ruby cmake ninja clang rust \
+    ripgrep fzf fd curl tmux ncurses-utils \
+    tree-sitter tree-sitter-lua \
+    fastfetch shfmt shellcheck neovim &&
+  echo "----------------------------"
 echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
@@ -32,31 +32,28 @@ echo "----------------------------"
 echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
 gem update
-gem install rails bundler neovim erb-formatter
-gem install ruby-lsp rubocop readapt
-gem install erb_lint slim_lint haml_lint
-echo "----------------------------"
+gem install rails bundler neovim erb-formatter \
+  ruby-lsp rubocop readapt erb_lint slim_lint \
+  haml_lint &&
+  echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
-luarocks install luacheck
-echo "----------------------------"
+luarocks install luacheck &&
+  echo "----------------------------"
 echo ">> installing npm dependencies <<"
 echo "----------------------------"
-npm install -g typescript-language-server
-npm install -g @fsouza/prettierd
-npm install -g bash-language-server
-npm install -g neovim
-npm install -g typescript
-npm install -g eslint_d
-echo "----------------------------"
+npm install -g typescript-language-server \
+  @fsouza/prettierd bash-language-server \
+  neovim typescript eslint_d &&
+  echo "----------------------------"
 echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
-cargo install ast-grep
-echo "----------------------------"
+cargo install ast-grep &&
+  echo "----------------------------"
 echo ">> building nokogiri gem <<"
 echo "----------------------------"
-gem install nokogiri -- --use-system-libraries
-echo "----------------------------"
+gem install nokogiri -- --use-system-libraries &&
+  echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
 # required
