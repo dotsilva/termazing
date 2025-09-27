@@ -3,7 +3,7 @@
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
-pkg update
+pkg update -y
 pkg upgrade -y
 pkg install -y mandoc &&
   pkg install -y build-essential termux-api which \
