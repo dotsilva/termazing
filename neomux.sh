@@ -30,11 +30,12 @@ echo "----------------------------"
 command -v termux-clipboard-set
 echo "----------------------------"
 echo ">> ruby lsp, dap and etc <<"
+echo ">> building nokogiri gem <<"
 echo "----------------------------"
-gem update
-gem install rails bundler neovim erb-formatter \
-  ruby-lsp rubocop readapt erb_lint slim_lint \
-  haml_lint &&
+gem install nokogiri -- --use-system-libraries &&
+  gem install rails bundler neovim erb-formatter \
+    ruby-lsp rubocop readapt erb_lint slim_lint \
+    haml_lint &&
   echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
@@ -49,10 +50,6 @@ npm install -g typescript-language-server \
 echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
 cargo install ast-grep &&
-  echo "----------------------------"
-echo ">> building nokogiri gem <<"
-echo "----------------------------"
-gem install nokogiri -- --use-system-libraries &&
   echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
