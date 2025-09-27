@@ -20,7 +20,7 @@ echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
   getnf
-mv ~/termazing/tx-rails/2colors.properties ~/.termux/
+mv ~/termazing/tx-rails/2colors.properties ~/.termux/colors.properties
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
