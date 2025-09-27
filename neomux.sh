@@ -25,6 +25,10 @@ mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
 echo "----------------------------"
+echo ">> FLEXING 💪 <<"
+echo "----------------------------"
+fastfetch
+echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
 command -v termux-clipboard-set
@@ -62,10 +66,6 @@ mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
   rm -rf ~/.config/nvim/.git &&
   echo "----------------------------"
-echo ">> FLEXING 💪 <<"
-echo "----------------------------"
-fastfetch
-echo "----------------------------"
 echo ">> moving .lua files <<"
 echo "----------------------------"
 mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
@@ -76,4 +76,5 @@ nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
 echo ">> LETS FLEX AGAIN 💪 <<"
 echo "----------------------------"
+sleep 5
 nvim
