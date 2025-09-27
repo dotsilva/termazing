@@ -74,5 +74,6 @@ echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
 nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
-echo ">> script finished <<"
+echo ">> LETS FLEX AGAIN 💪 <<"
 echo "----------------------------"
+nvim
