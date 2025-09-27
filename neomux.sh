@@ -3,7 +3,6 @@
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
-sleep 5
 pkg update &&
   pkg upgrade -y &&
   pkg install mandoc &&
@@ -20,11 +19,9 @@ echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
 command -v termux-clipboard-set
-sleep 5
 echo "----------------------------"
 echo ">> ruby lsp, dap and etc <<"
 echo "----------------------------"
-sleep 5
 gem update
 gem install rails bundler neovim erb-formatter
 gem install ruby-lsp rubocop readapt
@@ -32,12 +29,10 @@ gem install erb_lint slim_lint haml_lint
 echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
-sleep 5
 luarocks install luacheck
 echo "----------------------------"
 echo ">> installing npm dependencies <<"
 echo "----------------------------"
-sleep 5
 npm install -g typescript-language-server
 npm install -g @fsouza/prettierd
 npm install -g bash-language-server
@@ -47,23 +42,19 @@ npm install -g eslint_d
 echo "----------------------------"
 echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
-sleep 5
 cargo install ast-grep
 echo "----------------------------"
 echo ">> building nokogiri gem <<"
 echo "----------------------------"
-sleep 5
 gem install nokogiri -- --use-system-libraries
 echo "----------------------------"
 echo ">> nerd fonts scritpt <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
-slee 2
 getnf
 echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
-sleep 5
 # required
 mv ~/.config/nvim{,.bak} &&
   # optional but recommended
@@ -76,7 +67,6 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim &&
 echo ">> FLEXING 💪 <<"
 echo "----------------------------"
 fastfetch
-sleep 7
 echo "----------------------------"
 echo ">> applying purplewave theme <<"
 echo ">> moving dotfiles <<"
@@ -85,15 +75,11 @@ mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
 mv ~/termazing/tx-rails/colors.properties ~/.termux/
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
-sleep 1
 termux-reload-settings
-sleep 1
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
-sleep 5
 nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
-echo ">> script finishing, opening neovim <<"
+echo ">> script finished <<"
 echo "----------------------------"
-sleep 2
