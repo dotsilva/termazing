@@ -14,8 +14,9 @@ pkg install -y mandoc &&
     python ruby cmake ninja clang rust \
     ripgrep fzf fd curl tmux ncurses-utils \
     tree-sitter tree-sitter-lua \
-    fastfetch shfmt shellcheck neovim &&
-  echo "----------------------------"
+    fastfetch shfmt shellcheck neovim
+
+echo "----------------------------"
 echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
@@ -24,14 +25,17 @@ mv ~/termazing/tx-rails/2colors.properties ~/.termux/colors.properties
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
+
 echo "----------------------------"
 echo ">> FLEXING 💪 <<"
 echo "----------------------------"
 fastfetch
+
 echo "----------------------------"
 echo ">> confirming clipboard <<"
 echo "----------------------------"
 command -v termux-clipboard-set
+
 echo "----------------------------"
 echo ">> ruby lsp, dap and etc <<"
 echo ">> building nokogiri gem <<"
@@ -39,22 +43,26 @@ echo "----------------------------"
 gem install nokogiri -- --use-system-libraries &&
   gem install rails bundler neovim erb-formatter \
     ruby-lsp rubocop readapt erb_lint slim_lint \
-    haml_lint &&
-  echo "----------------------------"
+    haml_lint
+
+echo "----------------------------"
 echo ">> lua luacheck <<"
 echo "----------------------------"
-luarocks install luacheck &&
-  echo "----------------------------"
+luarocks install luacheck
+
+echo "----------------------------"
 echo ">> installing npm dependencies <<"
 echo "----------------------------"
 npm install -g typescript-language-server \
   @fsouza/prettierd bash-language-server \
-  neovim typescript eslint_d &&
-  echo "----------------------------"
+  neovim typescript eslint_d
+
+echo "----------------------------"
 echo ">> compiling cargo dependencies <<"
 echo "----------------------------"
-cargo install ast-grep &&
-  echo "----------------------------"
+cargo install ast-grep
+
+echo "----------------------------"
 echo ">> installing lazyvim <<"
 echo "----------------------------"
 # required
@@ -64,15 +72,18 @@ mv ~/.config/nvim{,.bak} &&
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim &&
-  rm -rf ~/.config/nvim/.git &&
-  echo "----------------------------"
+  rm -rf ~/.config/nvim/.git
+
+echo "----------------------------"
 echo ">> moving .lua files <<"
 echo "----------------------------"
 mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
+
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
 nvim --headless "+Lazy! sync" +qa
+
 echo "----------------------------"
 echo ">> LETS FLEX AGAIN 💪 <<"
 echo "----------------------------"
