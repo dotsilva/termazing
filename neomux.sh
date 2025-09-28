@@ -29,6 +29,7 @@ termux-reload-settings
 echo "----------------------------"
 echo ">> FLEXING 💪 <<"
 echo "----------------------------"
+sleep 3
 fastfetch
 
 echo "----------------------------"
@@ -87,5 +88,5 @@ nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
 echo ">> LETS FLEX AGAIN 💪 <<"
 echo "----------------------------"
-sleep 5
+sleep 3
 nvim
