@@ -79,7 +79,7 @@ echo "----------------------------"
 echo ">> moving .lua files <<"
 echo "----------------------------"
 mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
-
+mv ~/termazing/thm-dracsoft.lua ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
