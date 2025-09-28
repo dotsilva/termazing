@@ -1,7 +1,5 @@
 export PATH="$HOME/.cargo/bin:$PATH"
 
-alias locatte='updatedb && locate'
-alias gitqik='git add . && git commit -m "automatic message"'
 # Auto-start tmux no Termux
 
 # garantir 256-color + truecolor
