@@ -14,7 +14,7 @@ pkg install -y mandoc &&
     python ruby cmake ninja clang rust \
     ripgrep fzf fd curl tmux ncurses-utils \
     tree-sitter tree-sitter-lua \
-    fastfetch shfmt shellcheck neovim
+    fastfetch shfmt shellcheck binutils neovim
 
 echo "----------------------------"
 echo ">> applying .files, font and theme <<"
