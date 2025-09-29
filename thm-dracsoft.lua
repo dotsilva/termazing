@@ -1,15 +1,12 @@
 return {
-  -- Adiciona o plugin do Dracula
-  {
-    "Mofiqul/dracula.nvim",
-    name = "dracula",
-  },
+	-- add dracula
+	{ "Mofiqul/dracula.nvim" },
 
-  -- Configura o LazyVim para usar o Dracula como tema principal
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dracula-soft",
-    },
-  },
+	-- Configure LazyVim to load dracula
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "dracula",
+		},
+	},
 }
