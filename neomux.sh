@@ -21,7 +21,7 @@ echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
   getnf
-mv ~/termazing/tx-rails/drac.properties ~/.termux/colors.properties
+mv ~/termazing/tx-rails/ash.properties ~/.termux/colors.properties
 mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 mv ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
@@ -79,7 +79,7 @@ echo "----------------------------"
 echo ">> moving .lua files <<"
 echo "----------------------------"
 mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
-mv ~/termazing/thm-dracsoft.lua ~/.config/nvim/lua/plugins/
+mv ~/termazing/thm-ashen.lua ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
