@@ -10,7 +10,6 @@ pkg update &&
 pkg install mandoc &&
 pkg install git &&
 git clone https://github.com/dotsilva/termazing.git &&
-mv ~/termazing/neomux.sh ~/ &&
-chmod +x neomux.sh &&
-./neomux.sh
+chmod +x ~/termazing/neomux.sh &&
+./$HOME/termazing/neomux.sh
 ```
