@@ -3,10 +3,10 @@
 echo "  ----------------------------  "
 echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
-pkg update -y
-pkg upgrade -y
-pkg install -y mandoc &&
-  pkg install -y build-essential termux-api which \
+pkg update
+yes | pkg upgrade &&
+yes | pkg install mandoc &&
+  yes | pkg install build-essential termux-api which \
     mlocate nodejs-lts openssl \
     lua51 luajit lua-language-server \
     libxml2 libxslt htop \
@@ -21,9 +21,9 @@ echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
   getnf
-mv ~/termazing/tx-rails/ash.properties ~/.termux/colors.properties
-mv ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
-mv ~/termazing/tx-rails/profile ~/.profile
+cp -r ~/termazing/tx-rails/ash.properties ~/.termux/colors.properties
+cp -r ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
+cp -r ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
 
 echo "----------------------------"
@@ -78,8 +78,8 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim &&
 echo "----------------------------"
 echo ">> moving .lua files <<"
 echo "----------------------------"
-mv ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
-mv ~/termazing/thm-ashen.lua ~/.config/nvim/lua/plugins/
+cp -r ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
+cp -r ~/termazing/thm-ashen.lua ~/.config/nvim/lua/plugins/
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
