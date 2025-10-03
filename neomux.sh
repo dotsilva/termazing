@@ -81,6 +81,7 @@ echo ">> moving .lua files <<"
 echo "----------------------------"
 cp -r ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
 cp -r ~/termazing/thm-ashen.lua ~/.config/nvim/lua/plugins/
+
 echo "----------------------------"
 echo ">> lazyvim first load (headless) <<"
 echo "----------------------------"
@@ -89,4 +90,4 @@ nvim --headless "+Lazy! sync" +qa
 echo "----------------------------"
 echo ">> USE getnf to install nerd fonts <<"
 echo "----------------------------"
-sleep 3
+source ~/.profile
