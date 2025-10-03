@@ -7,7 +7,6 @@ to install you can just copy paste (review the script before installing it, take
 
 ```
 pkg update &&
-yes | pkg install mandoc &&
 yes | pkg install git &&
 git clone https://github.com/dotsilva/termazing.git &&
 chmod +x ~/termazing/neomux.sh &&
