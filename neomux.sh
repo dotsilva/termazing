@@ -20,7 +20,9 @@ echo "----------------------------"
 echo ">> applying .files, font and theme <<"
 echo "----------------------------"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
-  getnf
+
+#getnf
+
 cp -r ~/termazing/tx-rails/ash.properties ~/.termux/colors.properties
 cp -r ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 cp -r ~/termazing/tx-rails/profile ~/.profile
@@ -86,7 +88,6 @@ echo "----------------------------"
 nvim --headless "+Lazy! sync" +qa
 
 echo "----------------------------"
-echo ">> LETS FLEX AGAIN 💪 <<"
+echo ">> USE getnf to install nerd fonts <<"
 echo "----------------------------"
 sleep 3
-nvim
