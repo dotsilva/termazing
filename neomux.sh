@@ -5,8 +5,7 @@ echo ">> installing pkg dependencies <<"
 echo "  ----------------------------  "
 pkg update
 yes | pkg upgrade &&
-yes | pkg install mandoc &&
-  yes | pkg install build-essential termux-api which \
+yes | pkg install build-essential termux-api which \
     mlocate nodejs-lts openssl \
     lua51 luajit lua-language-server \
     libxml2 libxslt htop \
