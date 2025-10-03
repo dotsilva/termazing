@@ -19,7 +19,7 @@ yes | pkg install mandoc &&
 echo "----------------------------"
 echo ">> applying .files, font and theme <<"
 echo "----------------------------"
-curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash &&
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
 
 #getnf
 
