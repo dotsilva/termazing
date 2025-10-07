@@ -22,7 +22,7 @@ curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh |
 
 #getnf
 
-cp -r ~/termazing/tx-rails/catmocha.properties ~/.termux/colors.properties
+cp -r ~/termazing/tx-rails/drac.properties ~/.termux/colors.properties
 cp -r ~/termazing/tx-rails/tmux.conf ~/.tmux.conf
 cp -r ~/termazing/tx-rails/profile ~/.profile
 termux-reload-settings
@@ -79,7 +79,7 @@ echo "----------------------------"
 echo ">> MOVING DOTLUA FILES <<"
 echo "----------------------------"
 cp -r ~/termazing/tx-rails/*.lua ~/.config/nvim/lua/plugins/
-cp -r ~/termazing/thm-catmocha.lua ~/.config/nvim/lua/plugins/
+cp -r ~/termazing/thm-dracsoft.lua ~/.config/nvim/lua/plugins/
 
 echo "----------------------------"
 echo ">> STARTING LAZY FIRST TIME - HEADLESS <<"
